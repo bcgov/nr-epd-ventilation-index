@@ -1,5 +1,8 @@
+from utils.data_fetch import fetch_and_clean_data
+
+
 def main():
-    print("Hello from nr-epd-ventilation-index!")
+    fetch_and_clean_data()
 
 
 if __name__ == "__main__":
