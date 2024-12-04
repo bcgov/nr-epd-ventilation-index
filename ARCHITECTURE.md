@@ -1,4 +1,4 @@
-# Ventilation Index Data Adapter Infrastructure
+# Ventilation Index Data Adapter Architecture
 
 ## Context
 
