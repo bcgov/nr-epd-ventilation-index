@@ -1,9 +1,15 @@
-# nr-epd-ventilation-index
+# Natural Resources - Environment Protection Division - Ventilation Index Project
 
-This application sources ventillation index data from Environment Canada and
-produces a text file similar to the bulletin produced by Environment Canada
-prior to 2025. This file powers many of BC's services related to ventilation
-index.
+British Columbia's ventilation index alert system is used by citizens to know
+whether or not they are allowed to perform controlled burns in various regions
+of the province.  Previously this data was sourced from Environment Canada's
+ECCC Datamart where they post daily bulletins with forecast values. Recently,
+Environment Canada has started publishing this data in much higher resolution in
+the World Meteorological Organization's standard General Regularly-distributed
+Information in Binary form format (GRIB). This project is a first step towards
+modernizing British Columbia's capabilities by reading the GRIB data and
+reproducing the original bulletin so that our systems can continue to operate.
+It will allow us to produce more, and more highly detailed data in the future.
 
 ## Development Requirements
 
