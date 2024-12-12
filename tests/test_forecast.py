@@ -1,10 +1,11 @@
 from datetime import datetime
 from pandas import DataFrame
 from freezegun import freeze_time
+import pytest
 from xarray import Dataset
 from geopandas import GeoDataFrame
 
-from utils.data_fetch import _build_geo_data_frames, _build_urls, _build_data_frames, _clean_data, _filter_data
+from utils.forecast import _build_geo_data_frames, _build_urls, _build_data_frames, _clean_data, _filter_data
 
 
 @freeze_time("2024-11-19")
@@ -26,7 +27,7 @@ def test_build_urls():
     assert urls[offset3] == url_3
 
 
-def test_build_dataframes():
+def test_build_data_frames():
     # This is an extremely minimal example of the structure of the data I've
     # seen from Environment Canada for my purposes. I'm no data scientist,
     # however.
@@ -183,9 +184,6 @@ def test_clean_data():
 
 
 def test_build_geo_data_frames():
-    # This test generates false warnings. See:
-    # https://github.com/geopandas/geopandas/issues/3430
-    # https://github.com/pyproj4/pyproj/issues/1307
     data_frame_1 = DataFrame(
         [
             {
@@ -213,7 +211,11 @@ def test_build_geo_data_frames():
         "024": data_frame_2,
     }
 
-    result = _build_geo_data_frames(data_frames)
+    with pytest.warns(DeprecationWarning):
+        # This test generates false warnings. See:
+        # https://github.com/geopandas/geopandas/issues/3430
+        # https://github.com/pyproj4/pyproj/issues/1307
+        result = _build_geo_data_frames(data_frames)
 
     assert "012" in result
     geo_data_frame_1 = result["012"]

@@ -31,8 +31,8 @@ def _build_urls() -> dict[str, str]:
 
 
 def _fetch_data(urls: dict[str, str]):
-    # Download the 12h, 24h, and 48h ventillation index forecast files from the
-    # Environment Canada datamart.
+    # Download the 12h, 24h, and 48h ventilation index forecast files from the
+    # Environment Canada data-mart.
     for offset, url in urls.items():
         print(f"Fetching {url}...")
         urlretrieve(url, f"./tmp/{offset}.grib2")
@@ -74,7 +74,7 @@ def _filter_data(canada_data_frames: dict[str, Dataset]) -> dict[str, DataFrame]
             & (canada_data_frame["longitude"] < -113.5)
         ]
 
-    num_data_points = sum([dataframe.shape[0] for dataframe in bc_data_frames.values()])
+    num_data_points = sum([data_frame.shape[0] for data_frame in bc_data_frames.values()])
     print(f"Filtered data to {num_data_points} data points.")
 
     return bc_data_frames
