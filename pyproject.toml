@@ -7,6 +7,7 @@ requires-python = ">=3.9"
 dependencies = [
     "cfgrib>=0.9.14.1",
     "geopandas>=1.0.1",
+    "numpy>=2.0.2",
     "xarray>=2024.7.0",
 ]
 

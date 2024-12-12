@@ -220,6 +220,7 @@ source = { virtual = "." }
 dependencies = [
     { name = "cfgrib" },
     { name = "geopandas" },
+    { name = "numpy" },
     { name = "xarray" },
 ]
 
@@ -233,6 +234,7 @@ dev = [
 requires-dist = [
     { name = "cfgrib", specifier = ">=0.9.14.1" },
     { name = "geopandas", specifier = ">=1.0.1" },
+    { name = "numpy", specifier = ">=2.0.2" },
     { name = "xarray", specifier = ">=2024.7.0" },
 ]
 
