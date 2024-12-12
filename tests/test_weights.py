@@ -3,7 +3,7 @@ from numpy import nan
 from numpy.testing import assert_equal
 from pandas import DataFrame
 
-from utils.weights import _create_weight_column, _get_weights
+from utils.weights import _create_weight_column, _apply_weight_of_1
 
 
 def test_create_weights_column():
@@ -77,7 +77,7 @@ def test_get_weights():
         "024": test_geo_data_frame_2,
     }
 
-    result = _get_weights(test_data)
+    result = _apply_weight_of_1(test_data)
 
     assert "012" in result
     geo_data_frame_with_weights_1 = result["012"]
