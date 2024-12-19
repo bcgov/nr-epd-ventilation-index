@@ -20,6 +20,8 @@ def _apply_weight_of_1(forecast_data: dict[str, GeoDataFrame]) -> dict[str, GeoD
     print("Applied weighting factor.")
     return forecasts_with_weights
 
+# TODO: Implement an apply_weights function that reads weighting values from
+# a csv file and applies them to the data frame.
 
 def apply_weights_simple(forecast_data: dict[str, GeoDataFrame]) -> dict[str, GeoDataFrame]:
     forecast_data_with_column = _create_weight_column(forecast_data)
