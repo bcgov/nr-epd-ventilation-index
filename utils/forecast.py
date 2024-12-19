@@ -33,7 +33,7 @@ def _build_urls() -> dict[str, str]:
     return urls
 
 
-def _fetch_data(urls: dict[str, str]):
+def _fetch_data(urls: dict[str, str]) -> None:
     # Download the 12h, 24h, and 48h ventilation index forecast files from the
     # Environment Canada data-mart.
     for offset, url in urls.items():
