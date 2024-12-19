@@ -8,6 +8,7 @@ dependencies = [
     "cfgrib>=0.9.14.1",
     "geopandas>=1.0.1",
     "numpy>=2.0.2",
+    "shapely>=2.0.6",
     "xarray>=2024.7.0",
 ]
 
