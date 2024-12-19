@@ -26,7 +26,10 @@ def get_ventilation_index_zones() -> GeoDataFrame:
     # The zones data frame has columns: Name, Geometry
     _decompress_ventilation_index_zones()
     ventilation_index_zones = read_file(DECOMPRESSED_FILEPATH)
-    print(f"loaded {ventilation_index_zones.shape[0]} ventilation index zones.")
+    # Re-project zones data from WGS 84 to web mercator to be compatible with
+    # the forecast data.
+    ventilation_index_zones.to_crs(epsg=3857, inplace=True)
+    print(f"Loaded {ventilation_index_zones.shape[0]} ventilation index zones.")
     return ventilation_index_zones
 
 
