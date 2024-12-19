@@ -22,7 +22,7 @@ def _decompress_ventilation_index_zones():
         f_out.write(bytes)
 
 
-def read_ventilation_index_zones() -> GeoDataFrame:
+def get_ventilation_index_zones() -> GeoDataFrame:
     _decompress_ventilation_index_zones()
     ventilation_index_zones = read_file(DECOMPRESSED_FILEPATH)
     print(f"loaded {ventilation_index_zones.shape[0]} ventilation index zones.")
@@ -30,4 +30,4 @@ def read_ventilation_index_zones() -> GeoDataFrame:
 
 
 if __name__ == "__main__":
-    read_ventilation_index_zones()
+    get_ventilation_index_zones()
