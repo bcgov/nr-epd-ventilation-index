@@ -23,6 +23,7 @@ def _decompress_ventilation_index_zones() -> None:
 
 
 def get_ventilation_index_zones() -> GeoDataFrame:
+    # The zones data frame has columns: Name, Geometry
     _decompress_ventilation_index_zones()
     ventilation_index_zones = read_file(DECOMPRESSED_FILEPATH)
     print(f"loaded {ventilation_index_zones.shape[0]} ventilation index zones.")

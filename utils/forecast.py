@@ -119,6 +119,7 @@ def _build_geo_data_frames(data_frames: dict[str, DataFrame]) -> dict[str, GeoDa
 
 
 def fetch_and_clean_data() -> dict[str, GeoDataFrame]:
+    # The final data frame will have columns: y, x, latitude, longitude, ventilation_index, geometry
     makedirs("./tmp", exist_ok=True)
 
     urls = _build_urls()
