@@ -8,6 +8,9 @@ from geopandas import points_from_xy, GeoDataFrame
 
 BASE_URL = "https://dd.weather.gc.ca/model_hrdps/continental/2.5km"
 OFFSETS = ["012", "024", "048"]
+
+# TODO: Sometimes nothing gets posted at this time. I need to develop a fallback
+# algorithm to test for file availability and alter this variable.
 POSTING_TIME = "00"
 
 
