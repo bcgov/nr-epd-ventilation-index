@@ -2,7 +2,7 @@ from datetime import datetime
 from os import makedirs
 import pytz
 
-REPORTS_DIR = "./reports/"
+REPORTS_DIR = "reports/"
 
 # Mapping the zone names used by BC to the zone names from the legacy report
 # produced by Environment Canada.
