@@ -95,7 +95,7 @@ def _generate_report_text(forecast_data: dict[str, dict[str, float]]) -> tuple[s
     full_date = now.strftime("%A %-d %B %Y").upper()
     short_date = now.strftime("%-d-%B-%Y").upper()
     report_data = _get_report_data(forecast_data)
-    filename = f"FLCN39_CWVR_{day_of_month}{time_of_issue_utc}.txt"
+    filename = f"FLCN39_CWVR_{now.strftime('%Y-%m-%d')}.txt"
 
     output = f"""FLCN39 CWVR {day_of_month}{time_of_issue_utc}
 SMOKE CONTROL FORECAST FOR THE BC AND YUKON ISSUED BY ENVIRONMENT CANADA AT 7:00 AM {dst}

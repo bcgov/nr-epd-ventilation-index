@@ -45,4 +45,4 @@ VENTILATION INDICES NORMALLY DROP TO POOR AFTER SUNSET.
 END/
 """
     assert content == expected_content
-    assert filename == "FLCN39_CWVR_191400.txt"
+    assert filename == "FLCN39_CWVR_2024-11-19.txt"
