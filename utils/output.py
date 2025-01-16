@@ -1,5 +1,8 @@
 from datetime import datetime
+from os import makedirs
 import pytz
+
+REPORTS_DIR = "./reports/"
 
 # Mapping the zone names used by BC to the zone names from the legacy report
 # produced by Environment Canada.
@@ -128,9 +131,10 @@ END/
 
 def generate_forecast_text_file(forecast_data: dict[str, dict[str, float]]) -> None:
     filename, output = _generate_report_text(forecast_data)
+    makedirs(REPORTS_DIR, exist_ok=True)
 
-    print(f"outputting to file {filename}")
+    print(f"outputting to file {REPORTS_DIR}{filename}")
     print("==============")
     print(output)
 
-    _write_file(filename, output)
+    _write_file(f"{REPORTS_DIR}{filename}", output)
