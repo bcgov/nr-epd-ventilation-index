@@ -51,11 +51,6 @@ ZONE_NAME_MAP = {
 }
 
 
-def _write_file(filename, output):
-    with open(f"tmp/{filename}", "w") as f:
-        f.write(output)
-
-
 def _get_vi_report(value: int) -> str:
     if value <= 33:
         return f"{value}/POOR"
@@ -131,10 +126,11 @@ END/
 
 def generate_forecast_text_file(forecast_data: dict[str, dict[str, float]]) -> None:
     filename, output = _generate_report_text(forecast_data)
-    makedirs(REPORTS_DIR, exist_ok=True)
 
     print(f"outputting to file {REPORTS_DIR}{filename}")
     print("==============")
     print(output)
 
-    _write_file(f"{REPORTS_DIR}{filename}", output)
+    makedirs(REPORTS_DIR, exist_ok=True)
+    with open(f"{REPORTS_DIR}{filename}", "w") as f:
+        f.write(output)
