@@ -11,4 +11,5 @@ def calculate_weighted_means(grouped_forecast_data: dict[dict[str, GeoDataFrame]
             if zone_name not in result:
                 result[zone_name] = {}
             result[zone_name][forecast_time] = weighted_mean
+            print(f"Calculated weighted mean for {zone_name} at {forecast_time}: {weighted_mean}")
     return result
