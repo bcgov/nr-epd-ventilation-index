@@ -1,6 +1,5 @@
 from datetime import datetime
 from os import makedirs
-import pytz
 
 REPORTS_DIR = "reports/"
 
@@ -88,7 +87,7 @@ def _get_report_data(forecast_data: dict[str, dict[str, float]]) -> str:
 
 
 def _generate_report_text(forecast_data: dict[str, dict[str, float]]) -> tuple[str, str]:
-    now = datetime.now(pytz.timezone("America/Vancouver"))
+    now = datetime.now()
     day_of_month = now.strftime("%d")
     dst = "PDT" if now.tzname() == "PDT" else "PST"
     time_of_issue_utc = "1400" if dst == "PST" else "1300"
