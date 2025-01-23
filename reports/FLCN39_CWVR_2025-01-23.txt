@@ -1,0 +1,62 @@
+FLCN39 CWVR 231400
+SMOKE CONTROL FORECAST FOR THE BC AND YUKON ISSUED BY ENVIRONMENT CANADA AT 7:00 AM PST
+THURSDAY 23 JANUARY 2025 FOR TODAY.
+
+MIXING HEIGHTS IN METRES ABOVE SEA LEVEL.  AVERAGE WINDS IN KM/H.
+
+23-JANUARY-2025
+BRITISH COLUMBIA                                TODAY                      TOMORROW
+                     7:00 AM                    4:00 PM                    4:00 PM
+                     VI         WND     MXG HT  VI         WND     MXG HT  VI         WND     MXG HT
+                                KM/H    M                  KM/H    M                  KM/H    M
+FRASER CANYON        2/POOR     0       0       7/POOR     0       0       13/POOR    0       0
+KAMLOOPS             7/POOR     0       0       13/POOR    0       0       20/POOR    0       0
+OKANAGAN             3/POOR     0       0       36/FAIR    0       0       31/POOR    0       0
+SALMON ARM           2/POOR     0       0       5/POOR     0       0       2/POOR     0       0
+CASTLEGAR            7/POOR     0       0       20/POOR    0       0       23/POOR    0       0
+CRANBROOK            4/POOR     0       0       10/POOR    0       0       0/POOR     0       0
+REVELSTOKE           0/POOR     0       0       2/POOR     0       0       1/POOR     0       0
+GOLDEN               0/POOR     0       0       2/POOR     0       0       0/POOR     0       0
+SPARWOOD             0/POOR     0       0       2/POOR     0       0       0/POOR     0       0
+CLEARWATER           3/POOR     0       0       15/POOR    0       0       1/POOR     0       0
+QUESNEL              35/FAIR    0       0       29/POOR    0       0       23/POOR    0       0
+100 MILE             5/POOR     0       0       9/POOR     0       0       9/POOR     0       0
+WILLIAMS LAKE        16/POOR    0       0       14/POOR    0       0       8/POOR     0       0
+PUNTZI MTN           3/POOR     0       0       11/POOR    0       0       5/POOR     0       0
+MCBRIDE              19/POOR    0       0       24/POOR    0       0       19/POOR    0       0
+PRINCE GEORGE        61/GOOD    0       0       31/POOR    0       0       24/POOR    0       0
+VANDERHOOF           49/FAIR    0       0       42/FAIR    0       0       24/POOR    0       0
+BURNS LAKE           31/POOR    0       0       27/POOR    0       0       17/POOR    0       0
+SMITHERS             20/POOR    0       0       27/POOR    0       0       18/POOR    0       0
+MACKENZIE            19/POOR    0       0       21/POOR    0       0       9/POOR     0       0
+CHETWYND             64/GOOD    0       0       48/FAIR    0       0       35/FAIR    0       0
+FT ST JOHN           49/FAIR    0       0       38/FAIR    0       0       14/POOR    0       0
+FORT NELSON          20/POOR    0       0       34/FAIR    0       0       16/POOR    0       0
+WATSON LAKE          15/POOR    0       0       18/POOR    0       0       28/POOR    0       0
+ATLIN                14/POOR    0       0       31/POOR    0       0       28/POOR    0       0
+DEASE LAKE           11/POOR    0       0       21/POOR    0       0       33/POOR    0       0
+VANCOUVER            0/POOR     0       0       5/POOR     0       0       4/POOR     0       0
+FRASER VALLEY        0/POOR     0       0       2/POOR     0       0       2/POOR     0       0
+SQUAMISH             0/POOR     0       0       0/POOR     0       0       0/POOR     0       0
+PEMBERTON            0/POOR     0       0       0/POOR     0       0       0/POOR     0       0
+SECHELT              0/POOR     0       0       7/POOR     0       0       1/POOR     0       0
+POWELL RIVER         0/POOR     0       0       6/POOR     0       0       1/POOR     0       0
+SRN VAN ISLD         5/POOR     0       0       6/POOR     0       0       6/POOR     0       0
+CNTRL VAN ISLD       1/POOR     0       0       9/POOR     0       0       3/POOR     0       0
+TOFINO               2/POOR     0       0       5/POOR     0       0       0/POOR     0       0
+NRN VAN ISLD         6/POOR     0       0       17/POOR    0       0       7/POOR     0       0
+BELLA COOLA          4/POOR     0       0       4/POOR     0       0       1/POOR     0       0
+TERRACE              9/POOR     0       0       6/POOR     0       0       9/POOR     0       0
+PRINCE RUPERT        5/POOR     0       0       12/POOR    0       0       12/POOR    0       0
+SANDSPIT             7/POOR     0       0       19/POOR    0       0       21/POOR    0       0
+STEWART              3/POOR     0       0       3/POOR     0       0       5/POOR     0       0
+
+
+VENTILATION GUIDELINES:
+POOR:   0-33
+FAIR:   34-54
+GOOD:   55-100
+VENTILATION INDICES NORMALLY DROP TO POOR AFTER SUNSET.
+
+
+END/
