@@ -31,8 +31,8 @@ BRITISH COLUMBIA                                TODAY                      TOMOR
                      7:00 AM                    4:00 PM                    4:00 PM
                      VI         WND     MXG HT  VI         WND     MXG HT  VI         WND     MXG HT
                                 KM/H    M                  KM/H    M                  KM/H    M
-FRASER CANYON        25/POOR    0       0       45/FAIR    0       0       75/GOOD    0       0
-KAMLOOPS             30/POOR    0       0       50/FAIR    0       0       80/GOOD    0       0
+FRASER CANYON        25/POOR    NA      NA      45/FAIR    NA      NA      75/GOOD    NA      NA
+KAMLOOPS             30/POOR    NA      NA      50/FAIR    NA      NA      80/GOOD    NA      NA
 
 
 VENTILATION GUIDELINES:

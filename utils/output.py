@@ -80,7 +80,7 @@ def _get_report_data(forecast_data: dict[str, dict[str, float]]) -> str:
         report_tomorrow = _get_vi_report(vi_tomorrow)
 
         lines.append(
-            f"{zone_name: <20} {report_now: <7}    0       0       {report_today: <7}    0       0       {report_tomorrow: <7}    0       0"
+            f"{zone_name: <20} {report_now: <7}    NA      NA      {report_today: <7}    NA      NA      {report_tomorrow: <7}    NA      NA"
         )
 
     return "\n".join(lines)
