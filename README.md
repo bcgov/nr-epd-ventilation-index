@@ -13,10 +13,10 @@ It will allow us to produce more, and more highly detailed data in the future.
 
 ## Operating Guide
 
-To manually trigger a run of the application, run the "Run Application" github
-workflow. This workflow will automatically run at 04:00 UTC, but there is a
-chance that Environment Canada will not have published the required data at that
-time. If that happens manual intervention will be necessary.
+Manual intervention should not be needed because the application will run every
+10 minutes, and abort if there exists a report for the day. However, if
+necessary, but application can be triggered by manually starting the
+`run_application` github workflow.
 
 ## Development Requirements
 
