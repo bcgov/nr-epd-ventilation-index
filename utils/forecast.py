@@ -1,5 +1,6 @@
 from datetime import date
 from os import makedirs
+from urllib.error import URLError
 from urllib.request import urlretrieve
 from pandas import DataFrame
 from xarray import load_dataset, Dataset
@@ -9,12 +10,8 @@ from geopandas import points_from_xy, GeoDataFrame
 BASE_URL = "https://dd.weather.gc.ca/model_hrdps/continental/2.5km"
 OFFSETS = ["012", "024", "048"]
 
-# TODO: Sometimes nothing gets posted at this time. I need to develop a fallback
-# algorithm to test for file availability and alter this variable.
-POSTING_TIME = "00"
 
-
-def _build_urls() -> dict[str, str]:
+def _build_urls_for_posting_time(posting_time: str) -> dict[str, str]:
     # The url for the data sources will be a combination of yesterday's date,
     # plus an offset in number of hours (UTC) into the future for the forecast.
     # To build the report I need to fetch the 12, 24, and 48 hour forecast data
@@ -24,7 +21,7 @@ def _build_urls() -> dict[str, str]:
     today = date.today().strftime("%Y%m%d")
     for offset in OFFSETS:
         urls[offset] = (
-            f"{BASE_URL}/{POSTING_TIME}/{offset}/{today}T{POSTING_TIME}Z_MSC_HRDPS_VI_Sfc_RLatLon0.0225_PT{offset}H.grib2"
+            f"{BASE_URL}/{posting_time}/{offset}/{today}T{posting_time}Z_MSC_HRDPS_VI_Sfc_RLatLon0.0225_PT{offset}H.grib2"
         )
 
     info = "\n".join([url for _, url in urls.items()])
@@ -32,14 +29,38 @@ def _build_urls() -> dict[str, str]:
 
     return urls
 
-
-def _fetch_data(urls: dict[str, str]) -> None:
-    # Download the 12h, 24h, and 48h ventilation index forecast files from the
-    # Environment Canada data-mart.
+def _try_urls(urls: dict[str, str]) -> None:
     for offset, url in urls.items():
         print(f"Fetching {url}...")
         urlretrieve(url, f"./tmp/{offset}.grib2")
     print("Done.\n")
+
+
+def _fetch_data(urls: dict[str, str]) -> None:
+    # Download the 12h, 24h, and 48h ventilation index forecast files from the
+    # Environment Canada data-mart.
+    print("Trying to fetch data for the 00 posting time.")
+    urls = _build_urls_for_posting_time("00")
+    try:
+        _try_urls(urls)
+    except URLError:
+        print("Failed to fetch data for the 00 posting time. Trying the 06 posting time.")
+        urls = _build_urls_for_posting_time("06")
+        try:
+            _try_urls(urls)
+        except URLError:
+            print("Failed to fetch data for the 06 posting time. Trying the 12 posting time.")
+            urls = _build_urls_for_posting_time("12")
+            try:
+                _try_urls(urls)
+            except URLError:
+                print("Failed to fetch data for the 12 posting time. Trying the 18 posting time.")
+                urls = _build_urls_for_posting_time("18")
+                try:
+                    _try_urls(urls)
+                except URLError:
+                    print("Failed to fetch data for the 18 posting time. Exiting.")
+                    exit(1)
 
 
 def _read_data() -> dict[str, Dataset]:
@@ -122,8 +143,7 @@ def fetch_and_clean_data() -> dict[str, GeoDataFrame]:
     # The final data frame will have columns: y, x, latitude, longitude, ventilation_index, geometry
     makedirs("./tmp", exist_ok=True)
 
-    urls = _build_urls()
-    _fetch_data(urls)
+    _fetch_data()
     datasets = _read_data()
     data_frames = _build_data_frames(datasets)
     filtered_data_frames = _filter_data(data_frames)
