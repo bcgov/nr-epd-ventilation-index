@@ -26,4 +26,4 @@ necessary, but application can be triggered by manually starting the
 
 To set your environment up for development run `uv sync --all-extras --dev` to
 automatically deploy a python virtual environment. This includes the ruff
-formatter.
+formatter. To run the application run `uv run main.py`.
