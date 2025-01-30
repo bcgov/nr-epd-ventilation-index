@@ -3,7 +3,11 @@ name: Run Application
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 4 * * *'
+    - cron: '*/10 * * * *'
+
+concurrency:
+  group: run-application
+  cancel-in-progress: false
 
 jobs:
   run_application:
