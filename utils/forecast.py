@@ -25,15 +25,16 @@ def _build_urls_for_posting_time(posting_time: str) -> dict[str, str]:
         )
 
     info = "\n".join([url for _, url in urls.items()])
-    print(f"Generated URLs:\n{info}\n")
+    print(f"Generated URLs:\n{info}")
 
     return urls
+
 
 def _try_urls(urls: dict[str, str]) -> None:
     for offset, url in urls.items():
         print(f"Fetching {url}...")
         urlretrieve(url, f"./tmp/{offset}.grib2")
-    print("Done.\n")
+    print("Done.")
 
 
 def _fetch_data(urls: dict[str, str]) -> None:
