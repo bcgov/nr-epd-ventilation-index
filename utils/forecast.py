@@ -37,7 +37,7 @@ def _try_urls(urls: dict[str, str]) -> None:
     print("Done.")
 
 
-def _fetch_data(urls: dict[str, str]) -> None:
+def _fetch_data() -> None:
     # Download the 12h, 24h, and 48h ventilation index forecast files from the
     # Environment Canada data-mart.
     print("Trying to fetch data for the 00 posting time.")
