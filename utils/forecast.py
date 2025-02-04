@@ -61,7 +61,8 @@ def _fetch_data() -> None:
                     _try_urls(urls)
                 except URLError:
                     print("Failed to fetch data for the 18 posting time. Exiting.")
-                    exit(1)
+                    # This is an expected failure and I don't want to get notifications about it.
+                    exit(0)
 
 
 def _read_data() -> dict[str, Dataset]:
