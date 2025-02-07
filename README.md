@@ -14,9 +14,44 @@ It will allow us to produce more, and more highly detailed data in the future.
 ## Operating Guide
 
 Manual intervention should not be needed because the application will run every
-10 minutes, and abort if there exists a report for the day. However, if
+60 minutes, and abort if there exists a report for the day. However, if
 necessary, but application can be triggered by manually starting the
 `run_application` github workflow.
+
+### Updating Zone Definitions
+
+The zone definitions used by this application are the same zones that are used
+by the
+([Ventilation Index Interactive Map](https://governmentofbc.maps.arcgis.com/apps/webappviewer/index.html?id=6d288bc667b24528a5c1e3b4c0373d07)).
+The zone definitions used by the map application define multiple polygons for
+each zone, which would increase the runtime of this application. I have created
+a script that will take the union of all zones with the same name and output a
+compressed file suitable for use by this application.
+
+To update the definitions follow the procedure:
+
+1. Install uv (https://docs.astral.sh/uv/) for your platform. This software
+   manages Python virtual environments without making any modifications to your
+   system and will ensure that you can run the script.
+
+2. Open a terminal in the root of your local copy of this code, and use uv to
+   install the python development environment:
+
+   ```bash
+   uv sync --all-extras --dev
+   ```
+
+3. Place the updated zone definitions KML file in the source directory and run
+   the `update_zones.py` script.
+
+   ```bash
+   uv run scripts/update_zones.py ./Venting_Index_HD.kml
+   ```
+
+4. This may take several minutes to run depending on your device. Once it is
+   complete the file `data/ventilation_index_zones.geojson.xz` should be
+   modified. To apply the changes commit the updated file to git and push the
+   changes to the repository.
 
 ## Development Requirements
 
