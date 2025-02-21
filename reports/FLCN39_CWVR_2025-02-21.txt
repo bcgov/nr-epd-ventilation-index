@@ -1,0 +1,62 @@
+FLCN39 CWVR 211400
+SMOKE CONTROL FORECAST FOR THE BC AND YUKON ISSUED BY ENVIRONMENT CANADA AT 7:00 AM PST
+FRIDAY 21 FEBRUARY 2025 FOR TODAY.
+
+MIXING HEIGHTS IN METRES ABOVE SEA LEVEL.  AVERAGE WINDS IN KM/H.
+
+21-FEBRUARY-2025
+BRITISH COLUMBIA                                TODAY                      TOMORROW
+                     7:00 AM                    4:00 PM                    4:00 PM
+                     VI         WND     MXG HT  VI         WND     MXG HT  VI         WND     MXG HT
+                                KM/H    M                  KM/H    M                  KM/H    M
+FRASER CANYON        17/POOR    NA      NA      47/FAIR    NA      NA      39/FAIR    NA      NA
+KAMLOOPS             17/POOR    NA      NA      47/FAIR    NA      NA      54/FAIR    NA      NA
+OKANAGAN             13/POOR    NA      NA      39/FAIR    NA      NA      46/FAIR    NA      NA
+SALMON ARM           12/POOR    NA      NA      22/POOR    NA      NA      29/POOR    NA      NA
+CASTLEGAR            14/POOR    NA      NA      35/FAIR    NA      NA      28/POOR    NA      NA
+CRANBROOK            15/POOR    NA      NA      42/FAIR    NA      NA      36/FAIR    NA      NA
+REVELSTOKE           11/POOR    NA      NA      24/POOR    NA      NA      13/POOR    NA      NA
+GOLDEN               7/POOR     NA      NA      28/POOR    NA      NA      22/POOR    NA      NA
+SPARWOOD             7/POOR     NA      NA      28/POOR    NA      NA      22/POOR    NA      NA
+CLEARWATER           10/POOR    NA      NA      21/POOR    NA      NA      25/POOR    NA      NA
+QUESNEL              29/POOR    NA      NA      53/FAIR    NA      NA      60/GOOD    NA      NA
+100 MILE             35/FAIR    NA      NA      59/GOOD    NA      NA      59/GOOD    NA      NA
+WILLIAMS LAKE        26/POOR    NA      NA      48/FAIR    NA      NA      59/GOOD    NA      NA
+PUNTZI MTN           14/POOR    NA      NA      49/FAIR    NA      NA      49/FAIR    NA      NA
+MCBRIDE              20/POOR    NA      NA      37/FAIR    NA      NA      36/FAIR    NA      NA
+PRINCE GEORGE        30/POOR    NA      NA      41/FAIR    NA      NA      45/FAIR    NA      NA
+VANDERHOOF           7/POOR     NA      NA      37/FAIR    NA      NA      48/FAIR    NA      NA
+BURNS LAKE           5/POOR     NA      NA      26/POOR    NA      NA      38/FAIR    NA      NA
+SMITHERS             1/POOR     NA      NA      15/POOR    NA      NA      28/POOR    NA      NA
+MACKENZIE            6/POOR     NA      NA      15/POOR    NA      NA      22/POOR    NA      NA
+CHETWYND             26/POOR    NA      NA      26/POOR    NA      NA      40/FAIR    NA      NA
+FT ST JOHN           14/POOR    NA      NA      1/POOR     NA      NA      27/POOR    NA      NA
+FORT NELSON          12/POOR    NA      NA      38/FAIR    NA      NA      22/POOR    NA      NA
+WATSON LAKE          9/POOR     NA      NA      19/POOR    NA      NA      32/POOR    NA      NA
+ATLIN                10/POOR    NA      NA      12/POOR    NA      NA      17/POOR    NA      NA
+DEASE LAKE           7/POOR     NA      NA      17/POOR    NA      NA      17/POOR    NA      NA
+VANCOUVER            5/POOR     NA      NA      18/POOR    NA      NA      50/FAIR    NA      NA
+FRASER VALLEY        3/POOR     NA      NA      10/POOR    NA      NA      22/POOR    NA      NA
+SQUAMISH             5/POOR     NA      NA      8/POOR     NA      NA      14/POOR    NA      NA
+PEMBERTON            7/POOR     NA      NA      18/POOR    NA      NA      13/POOR    NA      NA
+SECHELT              11/POOR    NA      NA      17/POOR    NA      NA      17/POOR    NA      NA
+POWELL RIVER         19/POOR    NA      NA      28/POOR    NA      NA      20/POOR    NA      NA
+SRN VAN ISLD         7/POOR     NA      NA      22/POOR    NA      NA      38/FAIR    NA      NA
+CNTRL VAN ISLD       32/POOR    NA      NA      48/FAIR    NA      NA      32/POOR    NA      NA
+TOFINO               40/FAIR    NA      NA      59/GOOD    NA      NA      23/POOR    NA      NA
+NRN VAN ISLD         55/GOOD    NA      NA      63/GOOD    NA      NA      34/FAIR    NA      NA
+BELLA COOLA          19/POOR    NA      NA      28/POOR    NA      NA      33/POOR    NA      NA
+TERRACE              0/POOR     NA      NA      8/POOR     NA      NA      10/POOR    NA      NA
+PRINCE RUPERT        40/FAIR    NA      NA      55/GOOD    NA      NA      52/FAIR    NA      NA
+SANDSPIT             54/FAIR    NA      NA      73/GOOD    NA      NA      78/GOOD    NA      NA
+STEWART              0/POOR     NA      NA      6/POOR     NA      NA      8/POOR     NA      NA
+
+
+VENTILATION GUIDELINES:
+POOR:   0-33
+FAIR:   34-54
+GOOD:   55-100
+VENTILATION INDICES NORMALLY DROP TO POOR AFTER SUNSET.
+
+
+END/
