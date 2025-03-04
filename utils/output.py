@@ -1,5 +1,6 @@
 from datetime import datetime
 from os import makedirs
+import pandas as pd
 
 REPORTS_DIR = "reports/"
 
@@ -71,16 +72,16 @@ def _get_report_data(forecast_data: dict[str, dict[str, float]]) -> str:
     for zone_name, forecast in forecast_data.items():
         zone_name = ZONE_NAME_MAP[zone_name]
 
-        vi_now = round(forecast["012"])
-        vi_today = round(forecast["024"])
-        vi_tomorrow = round(forecast["048"])
+        vi_now = round(forecast["012"]) if not pd.isna(forecast["012"]) else "NA"
+        vi_today = round(forecast["024"]) if not pd.isna(forecast["024"]) else "NA"
+        vi_tomorrow = round(forecast["048"]) if not pd.isna(forecast["048"]) else "NA"
 
-        report_now = _get_vi_report(vi_now)
-        report_today = _get_vi_report(vi_today)
-        report_tomorrow = _get_vi_report(vi_tomorrow)
+        report_now = _get_vi_report(vi_now) if vi_now != "NA" else "NA"
+        report_today = _get_vi_report(vi_today) if vi_today != "NA" else "NA"
+        report_tomorrow = _get_vi_report(vi_tomorrow) if vi_tomorrow != "NA" else "NA"
 
         lines.append(
-            f"{zone_name: <20} {report_now: <7}    NA      NA      {report_today: <7}    NA      NA      {report_tomorrow: <7}    NA      NA"
+            f"{zone_name:<20} {report_now:<7}    NA      NA      {report_today:<7}    NA      NA      {report_tomorrow:<7}    NA      NA"
         )
 
     return "\n".join(lines)

@@ -1,6 +1,6 @@
 from freezegun import freeze_time
 
-from utils.output import _generate_report_text
+from utils.output import _generate_report_text, _get_report_data
 
 
 @freeze_time("2024-11-19 08:00:00")
@@ -46,3 +46,42 @@ END/
 """
     assert content == expected_content
     assert filename == "FLCN39_CWVR_2024-11-19.txt"
+
+def test_get_report_data():
+    forecast_data = {
+        "Fraser Canyon": {
+            "012": 25.0,
+            "024": 45.0,
+            "048": 75.0,
+        },
+        "Kamloops": {
+            "012": 30.0,
+            "024": 50.0,
+            "048": 80.0,
+        },
+    }
+
+    expected_report_data = """FRASER CANYON        25/POOR    NA      NA      45/FAIR    NA      NA      75/GOOD    NA      NA
+KAMLOOPS             30/POOR    NA      NA      50/FAIR    NA      NA      80/GOOD    NA      NA"""
+
+    assert _get_report_data(forecast_data) == expected_report_data
+
+
+def test_get_report_data_with_na_values():
+    forecast_data = {
+        "Fraser Canyon": {
+            "012": float("nan"),
+            "024": 45.0,
+            "048": 75.0,
+        },
+        "Kamloops": {
+            "012": 30.0,
+            "024": float("nan"),
+            "048": 80.0,
+        },
+    }
+
+    expected_report_data = """FRASER CANYON        NA         NA      NA      45/FAIR    NA      NA      75/GOOD    NA      NA
+KAMLOOPS             30/POOR    NA      NA      NA         NA      NA      80/GOOD    NA      NA"""
+
+    assert _get_report_data(forecast_data) == expected_report_data

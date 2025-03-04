@@ -18,7 +18,7 @@ Manual intervention should not be needed because the application will run every
 necessary, but application can be triggered by manually starting the
 `run_application` github workflow.
 
-### Updating Zone Definitions
+### Updating Zone Definitions and Weights
 
 The zone definitions used by this application are the same zones that are used
 by the
@@ -41,18 +41,17 @@ To update the definitions follow the procedure:
    uv sync --all-extras --dev
    ```
 
-3. Place the updated zone definitions KML file in the source directory and run
-   the `update_zones.py` script.
+3. Place the updated zone definitions KML file, a GRIB2 forecast file, and the
+   ventilation index weights csv file in the source directory and run
+   the `process_data.py` script.
 
    ```bash
-   uv run scripts/update_zones.py ./Venting_Index_HD.kml
+   uv run ./scripts/process_data.py forecast.grib2 ventilation_index_weights.csv Venting_Index_HD.kml
    ```
 
-4. This may take several minutes to run depending on your device. Once it is
-   complete the file `data/ventilation_index_zones.geojson.xz` should be
-   modified. To apply the changes commit the updated file to git and push the
-   changes to the repository.
-
+4. This may take several minutes to run depending on your device. It should
+   create the point_data.csv file. Commit this to source control.
+   
 ## Development Requirements
 
 - uv (https://docs.astral.sh/uv/) for python version and dependency management.

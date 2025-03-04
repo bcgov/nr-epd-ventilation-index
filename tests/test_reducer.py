@@ -1,20 +1,25 @@
 from geopandas import GeoDataFrame
-
+import pytest
 from utils.reducer import calculate_weighted_means
 
-
 def test_calculate_weighted_means():
-    data_1 = GeoDataFrame({"ventilation_index": [1.0, 2.0, 3.0], "weight": [0.5, 1.0, 1.5]})
-    data_2 = GeoDataFrame({"ventilation_index": [2.0, 3.0, 4.0], "weight": [1.0, 1.0, 1.0]})
-    grouped_forecast_data = {"zone_1": {"time_1": data_1, "time_2": data_2}}
-
-    expected_result = {
-        "zone_1": {
-            "time_1": (1.0 * 0.5 + 2.0 * 1.0 + 3.0 * 1.5) / (0.5 + 1.0 + 1.5),
-            "time_2": (2.0 * 1.0 + 3.0 * 1.0 + 4.0 * 1.0) / (1.0 + 1.0 + 1.0),
-        }
+    data = {
+        "zone1": {
+            "012": GeoDataFrame({"ventilation_index": [10, 20, 30], "weight": [1, 2, 3]}),
+            "024": GeoDataFrame({"ventilation_index": [40, 50, 60], "weight": [4, 5, 6]}),
+        },
+        "zone2": {"012": GeoDataFrame({"ventilation_index": [70, 80, 90], "weight": [7, 8, 9]})},
     }
 
-    result = calculate_weighted_means(grouped_forecast_data)
+    expected_result = {
+        "zone1": {
+            "012": pytest.approx(23.333333333333332),
+            "024": pytest.approx(51.333333333333336),
+        },
+        "zone2": {"012": pytest.approx(80.83333333333)},
+    }
 
-    assert result == expected_result
+    result = calculate_weighted_means(data)
+    for zone, forecasts in expected_result.items():
+        for time, expected_value in forecasts.items():
+            assert float(result[zone][time]) == expected_value
