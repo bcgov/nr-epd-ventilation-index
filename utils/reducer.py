@@ -12,7 +12,6 @@ def calculate_weighted_means(grouped_forecast_data: dict[dict[str, GeoDataFrame]
             # Weighted mean is the sum of the product of the values and weights
             # divided by the sum of the weights.
             weighted_mean = (data["ventilation_index"] * data["weight"]).sum() / data["weight"].sum()
-            weighted_mean = weighted_mean
             if zone_name not in result:
                 result[zone_name] = {}
             result[zone_name][forecast_time] = weighted_mean
