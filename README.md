@@ -51,6 +51,10 @@ To update the definitions follow the procedure:
 
 4. This may take several minutes to run depending on your device. It should
    create the point_data.csv file. Commit this to source control.
+
+### Adding new / renaming zones
+
+If a zone name changes, or a zone is added to the system, there is a data structure that maps the zone name used on the Government of British Columbia interactive ventilation index map and the legacy ECCC report for ingestion. This structure is located in `utils/output.py`.
    
 ## Development Requirements
 
