@@ -16,7 +16,7 @@ product_information:
   product_acronym: VIU
   product_description: Processes Environment Canada ventilation index data into a format that is used to power services for the public.
   product_name: Ventilation Index Utility
-  product_status: maturing
+  product_status: stable
   product_urls: []
   program_area: Digital Services
 product_technology_information:
