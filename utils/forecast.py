@@ -7,7 +7,11 @@ from xarray import load_dataset, Dataset
 from geopandas import points_from_xy, GeoDataFrame
 
 
-BASE_URL = "https://dd.weather.gc.ca/model_hrdps/continental/2.5km"
+url_domain = 'https://dd.weather.gc.ca'
+url_date_subdir = f'/{date.today().strftime("%Y%m%d")}'
+url_subfolder = '/WXO-DD/model_hrdps/continental/2.5km'
+
+BASE_URL = url_domain + url_date_subdir + url_subfolder
 OFFSETS = ["012", "024", "048"]
 
 
