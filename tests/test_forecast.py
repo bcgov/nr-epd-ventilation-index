@@ -19,9 +19,9 @@ def test_build_urls_for_posting_time():
     offset_1 = "012"
     offset_2 = "024"
     offset3 = "048"
-    url_1 = "https://dd.weather.gc.ca/model_hrdps/continental/2.5km/00/012/20241119T00Z_MSC_HRDPS_VI_Sfc_RLatLon0.0225_PT012H.grib2"
-    url_2 = "https://dd.weather.gc.ca/model_hrdps/continental/2.5km/00/024/20241119T00Z_MSC_HRDPS_VI_Sfc_RLatLon0.0225_PT024H.grib2"
-    url_3 = "https://dd.weather.gc.ca/model_hrdps/continental/2.5km/00/048/20241119T00Z_MSC_HRDPS_VI_Sfc_RLatLon0.0225_PT048H.grib2"
+    url_1 = "https://dd.weather.gc.ca/20241119/WXO-DD/model_hrdps/continental/2.5km/00/012/20241119T00Z_MSC_HRDPS_VI_Sfc_RLatLon0.0225_PT012H.grib2"
+    url_2 = "https://dd.weather.gc.ca/20241119/WXO-DD/model_hrdps/continental/2.5km/00/024/20241119T00Z_MSC_HRDPS_VI_Sfc_RLatLon0.0225_PT024H.grib2"
+    url_3 = "https://dd.weather.gc.ca/20241119/WXO-DD/model_hrdps/continental/2.5km/00/048/20241119T00Z_MSC_HRDPS_VI_Sfc_RLatLon0.0225_PT048H.grib2"
 
     urls = _build_urls_for_posting_time("00")
 

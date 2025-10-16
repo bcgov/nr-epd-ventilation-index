@@ -7,15 +7,18 @@ from xarray import load_dataset, Dataset
 from geopandas import points_from_xy, GeoDataFrame
 
 
-BASE_URL = "https://dd.weather.gc.ca/model_hrdps/continental/2.5km"
 OFFSETS = ["012", "024", "048"]
-
 
 def _build_urls_for_posting_time(posting_time: str) -> dict[str, str]:
     # The url for the data sources will be a combination of yesterday's date,
     # plus an offset in number of hours (UTC) into the future for the forecast.
     # To build the report I need to fetch the 12, 24, and 48 hour forecast data
     # for the data posted at 00 (midnight).
+    url_domain = 'https://dd.weather.gc.ca'
+    url_date_subdir = f'/{date.today().strftime("%Y%m%d")}'
+    url_subfolder = '/WXO-DD/model_hrdps/continental/2.5km'
+
+    BASE_URL = url_domain + url_date_subdir + url_subfolder
     urls: dict[str, str] = {}
     # The date in the filename is represented as "YYYYmmdd"
     today = date.today().strftime("%Y%m%d")
