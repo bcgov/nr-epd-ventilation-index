@@ -1,0 +1,62 @@
+FLCN39 CWVR 111400
+SMOKE CONTROL FORECAST FOR THE BC AND YUKON ISSUED BY ENVIRONMENT CANADA AT 7:00 AM PST
+THURSDAY 11 DECEMBER 2025 FOR TODAY.
+
+MIXING HEIGHTS IN METRES ABOVE SEA LEVEL.  AVERAGE WINDS IN KM/H.
+
+11-DECEMBER-2025
+BRITISH COLUMBIA                                TODAY                      TOMORROW
+                     7:00 AM                    4:00 PM                    4:00 PM
+                     VI         WND     MXG HT  VI         WND     MXG HT  VI         WND     MXG HT
+                                KM/H    M                  KM/H    M                  KM/H    M
+100 MILE             1/POOR     NA      NA      1/POOR     NA      NA      11/POOR    NA      NA
+ATLIN                2/POOR     NA      NA      2/POOR     NA      NA      0/POOR     NA      NA
+BELLA COOLA          18/POOR    NA      NA      11/POOR    NA      NA      16/POOR    NA      NA
+BURNS LAKE           42/FAIR    NA      NA      47/FAIR    NA      NA      41/FAIR    NA      NA
+CASTLEGAR            31/POOR    NA      NA      10/POOR    NA      NA      11/POOR    NA      NA
+CNTRL VAN ISLD       4/POOR     NA      NA      0/POOR     NA      NA      12/POOR    NA      NA
+CHETWYND             38/FAIR    NA      NA      12/POOR    NA      NA      1/POOR     NA      NA
+CLEARWATER           10/POOR    NA      NA      2/POOR     NA      NA      4/POOR     NA      NA
+CRANBROOK            28/POOR    NA      NA      15/POOR    NA      NA      20/POOR    NA      NA
+DEASE LAKE           1/POOR     NA      NA      0/POOR     NA      NA      0/POOR     NA      NA
+FORT NELSON          3/POOR     NA      NA      1/POOR     NA      NA      10/POOR    NA      NA
+FT ST JOHN           23/POOR    NA      NA      0/POOR     NA      NA      1/POOR     NA      NA
+FRASER CANYON        32/POOR    NA      NA      17/POOR    NA      NA      19/POOR    NA      NA
+FRASER VALLEY        23/POOR    NA      NA      10/POOR    NA      NA      8/POOR     NA      NA
+GOLDEN               14/POOR    NA      NA      5/POOR     NA      NA      8/POOR     NA      NA
+SANDSPIT             16/POOR    NA      NA      33/POOR    NA      NA      59/GOOD    NA      NA
+KAMLOOPS             10/POOR    NA      NA      1/POOR     NA      NA      1/POOR     NA      NA
+MACKENZIE            53/FAIR    NA      NA      35/FAIR    NA      NA      1/POOR     NA      NA
+MCBRIDE              25/POOR    NA      NA      16/POOR    NA      NA      25/POOR    NA      NA
+NRN VAN ISLD         6/POOR     NA      NA      6/POOR     NA      NA      14/POOR    NA      NA
+OKANAGAN             44/FAIR    NA      NA      17/POOR    NA      NA      14/POOR    NA      NA
+PEMBERTON            14/POOR    NA      NA      4/POOR     NA      NA      6/POOR     NA      NA
+POWELL RIVER         1/POOR     NA      NA      0/POOR     NA      NA      5/POOR     NA      NA
+PRINCE GEORGE        67/GOOD    NA      NA      55/GOOD    NA      NA      37/FAIR    NA      NA
+PRINCE RUPERT        30/POOR    NA      NA      15/POOR    NA      NA      32/POOR    NA      NA
+PUNTZI MTN           19/POOR    NA      NA      6/POOR     NA      NA      15/POOR    NA      NA
+QUESNEL              29/POOR    NA      NA      39/FAIR    NA      NA      59/GOOD    NA      NA
+REVELSTOKE           17/POOR    NA      NA      5/POOR     NA      NA      4/POOR     NA      NA
+SALMON ARM           17/POOR    NA      NA      2/POOR     NA      NA      2/POOR     NA      NA
+SECHELT              3/POOR     NA      NA      0/POOR     NA      NA      7/POOR     NA      NA
+SMITHERS             27/POOR    NA      NA      29/POOR    NA      NA      19/POOR    NA      NA
+SRN VAN ISLD         23/POOR    NA      NA      1/POOR     NA      NA      11/POOR    NA      NA
+SPARWOOD             41/FAIR    NA      NA      29/POOR    NA      NA      38/FAIR    NA      NA
+SQUAMISH             11/POOR    NA      NA      3/POOR     NA      NA      4/POOR     NA      NA
+STEWART              8/POOR     NA      NA      2/POOR     NA      NA      5/POOR     NA      NA
+TERRACE              18/POOR    NA      NA      8/POOR     NA      NA      8/POOR     NA      NA
+TOFINO               3/POOR     NA      NA      6/POOR     NA      NA      4/POOR     NA      NA
+VANCOUVER            7/POOR     NA      NA      0/POOR     NA      NA      16/POOR    NA      NA
+VANDERHOOF           72/GOOD    NA      NA      74/GOOD    NA      NA      49/FAIR    NA      NA
+WATSON LAKE          0/POOR     NA      NA      0/POOR     NA      NA      2/POOR     NA      NA
+WILLIAMS LAKE        10/POOR    NA      NA      1/POOR     NA      NA      32/POOR    NA      NA
+
+
+VENTILATION GUIDELINES:
+POOR:   0-33
+FAIR:   34-54
+GOOD:   55-100
+VENTILATION INDICES NORMALLY DROP TO POOR AFTER SUNSET.
+
+
+END/
